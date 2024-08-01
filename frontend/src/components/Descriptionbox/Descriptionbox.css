@@ -1,0 +1,61 @@
+/* Base Margin for Consistency */
+:root {
+    --base-margin: 20px;
+    --large-margin: 120px;
+    --medium-margin: 40px;
+    --small-margin: 10px;
+}
+
+.descriptionbox {
+    margin: var(--large-margin) var(--large-margin);
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    margin-bottom: var(--base-margin);
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+}
+
+.descriptionbox-nav-box.fade {
+    background: #FBFBFB;
+    color: #555;
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-margin);
+    border: 1px solid #d0d0d0;
+    padding: var(--base-margin);
+    background-color: #fff;
+}
+@media(max_width:1280px){
+    .descriptionbox{
+        margin: 60px;
+    }
+}
+@media(max_width:800px){
+    .descriptionbox{
+        margin: 60px 20px;
+    }
+    .descriptionbox-description{
+        font-size: 12px;
+    }
+}
+@media(max_width:800px){
+    .descriptionbox-description{
+        font-size: 10px;
+    }
+}
+
